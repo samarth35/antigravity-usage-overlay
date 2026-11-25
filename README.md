@@ -14,7 +14,7 @@ Grab the latest standalone Windows executable from the **[Releases](https://gith
   - **`Usage` tab:** 5-Hour & Weekly remaining bars, reset countdowns, **`Auto Sync`**, **`Manual`**, and **`Refresh`** buttons, plus today's token & turn summary.
   - **`Details` tab:** Today's `Input / Output / Cache` breakdown, Cache Hit %, active 5h & 7d totals, live burn rate (`tokens/hr`), and top 3 models.
   - **`Options` tab:** **`Auto`** background sync toggle, **`Opacity`** slider (`65%–100%`), **`Top`** (Always-on-Top), **`Peek`** (hover peek), **`Poll`** interval (`3s / 5s / 10s`), plus manual/clipboard quota sync.
-- **Automatic Live Sync:** Uses Windows UI Automation (`IUIAutomation`) and built-in Windows OCR (`Windows.Media.Ocr`) to read your quota directly from the open `Antigravity.exe` window when viewing the Models/Quota page, and tracks live token burn between syncs from `~/.gemini/antigravity/brain/*/.system_generated/logs/transcript.jsonl`.
+- **Automatic Live Sync:** Simply open the **Models** page in `Antigravity.exe` once — **Auto Sync** automatically captures your 5-Hour & Weekly percentages and reset timers via Windows UI Automation (`IUIAutomation`) and built-in Windows OCR (`Windows.Media.Ocr`). After that one capture, it continues tracking your live usage automatically from `~/.gemini/antigravity/brain/*/.system_generated/logs/transcript.jsonl` even when you leave the Models page (and re-syncs automatically whenever you visit it again).
 
 ## Controls
 
